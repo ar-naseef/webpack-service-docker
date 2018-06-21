@@ -8,7 +8,7 @@ https://github.com/cerebral/webpack-sandbox <br/>
 <br/>
 https://github.com/cerebral/webpackbin <br/>
 
-watchthis - https://www.youtube.com/watch?v=LWZHFcA9W6M
+watch this for better understanding- https://www.youtube.com/watch?v=LWZHFcA9W6M
 
 install `docker` & `docker-compose`
 clone the project and start the docker by typing `docker-compose up --build`
