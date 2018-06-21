@@ -1,0 +1,26 @@
+version: "2"
+services:     
+    webpack-sandbox:
+        build: ./webpack-sandbox
+        links:
+            - webpack-dll
+        ports:
+            - "4000:4000"
+
+    webpack-packager:
+        build: ./webpack-packager
+        ports:
+            - "5500:5500"
+
+    mongo:
+        image: mongo
+        ports:
+            - "27017:27017"
+
+    webpack-dll:
+        build: ./webpack-dll
+        links:
+            - mongo
+            - webpack-packager
+        ports:
+            - "5000:5000"
